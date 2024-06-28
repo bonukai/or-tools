@@ -65,7 +65,7 @@ git_repository(
 
 git_repository(
     name = "rules_python",
-    tag = "0.31.0",
+    tag = "0.33.2",
     remote = "https://github.com/bazelbuild/rules_python.git",
 )
 
@@ -245,13 +245,13 @@ git_repository(
 new_git_repository(
     name = "pybind11",
     build_file = "@pybind11_bazel//:pybind11.BUILD",
-    tag = "v2.12.0",
+    tag = "v2.13.1",
     remote = "https://github.com/pybind/pybind11.git",
 )
 
 new_git_repository(
     name = "pybind11_abseil",
-    commit = "52f27398876a3177049977249e004770bd869e61", # 2024/01/11
+    tag = "v202402.0",
     patches = ["//patches:pybind11_abseil.patch"],
     patch_args = ["-p1"],
     remote = "https://github.com/pybind/pybind11_abseil.git",
@@ -259,7 +259,7 @@ new_git_repository(
 
 new_git_repository(
     name = "pybind11_protobuf",
-    commit = "3b11990a99dea5101799e61d98a82c4737d240cc", # 2024/01/04
+    commit = "e90f33efeb2ae5c4e85ef83b22298f58e1e30894", # 2024/06/21
     remote = "https://github.com/pybind/pybind11_protobuf.git",
 )
 
